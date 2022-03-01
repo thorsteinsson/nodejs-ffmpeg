@@ -363,7 +363,7 @@ RUN \
     LD_LIBRARY_PATH=/usr/local/lib ffmpeg -buildconf
 
 # Release
-FROM node:12-alpine
+FROM node:14-alpine
 LABEL maintainer="hello@rickydunlop.co.uk"
 
 COPY --from=build /usr/local /usr/local
